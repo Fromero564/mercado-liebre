@@ -1,0 +1,32 @@
+body{
+    font-family:'Roboto';
+    font-size: 12px;
+}
+.barra-busqueda{
+    margin-left:20px;
+}
+.bg-yellow{
+    background-color: #EAC926;
+}
+
+.menu-principal{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    margin: auto;
+    background-color: #1259c3;
+   
+}
+
+
+.precio-size{
+    font-size: 18px;
+}
+
+.Desc-des-size{
+    font-size: 16px;
+}
+
+.titulares-size{
+    font-size: 24px;
+}
