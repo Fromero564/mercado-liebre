@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     font-family:'Roboto';
     font-size: 12px;
@@ -11,6 +14,7 @@ ul {
     background-color: white;
     margin-bottom: 10px;
     border: solid 1px #ebebeb;
+    box-sizing: border-box;
 }
 .barra-busqueda{
     margin-left:20px;
@@ -28,12 +32,35 @@ ul {
     margin:auto;
 }
 
+.desc-color-word{
+    color:#39b54a;
+}
+
 .desc-des-size{
+    width: 70vw;
     font-size: 16px;
 }
 
 .detalles-articulos{
     margin: 15px;
+    position: relative;
+    box-sizing: border-box;
+    
+}
+.detalles-articulos i {
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px; 
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
 }
 
 .div-footer{
@@ -71,8 +98,16 @@ ul {
     width: 90vw;
 }
 
+.precio-des{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
 .precio-size{
+    width: 30vw;
     font-size: 18px;
+    align-items: flex-start;
 }
 
 .titulares-size{
@@ -87,9 +122,19 @@ ul {
     width: 100%;
 }
 
+.site-navbar{
+    display: none;
+}
 
-@media (min-width:481px){
+@media(min-width:481px){
     /*tablet*/
+    .site-navbar{
+        display: contents;
+    }
+    .menu-principal{
+        display: none;
+    }
+  
 }
 
 @media(min-width:769px){
@@ -100,7 +145,19 @@ ul {
     .description {
      display:none;
     }
+    .site-navbar{
+        display: contents;
+    }
+    .menu-principal{
+        display: none;
+    }
 }
 @media(min-width:1281px){
    /*escritorio*/
+   .site-navbar{
+    display: contents;
+}
+   .menu-principal{
+    display: none;
+   }
 }
