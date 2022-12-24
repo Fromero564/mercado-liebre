@@ -1,6 +1,3 @@
-*{
-    box-sizing: border-box;
-}
 body{
     font-family:'Roboto';
     font-size: 12px;
@@ -16,8 +13,18 @@ ul {
     border: solid 1px #ebebeb;
     box-sizing: border-box;
 }
+
+.formulario-busqueda{
+    width: 50vw;
+}
+
+.banner-img{
+    margin-top: 20px;
+}
 .barra-busqueda{
     margin-left:20px;
+    width: 70%;
+
 }
 
 .bg-grey{
@@ -27,6 +34,20 @@ ul {
 .bg-yellow{
     background-color: #EAC926;
 }
+
+.carac-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.carac-img{
+    border-bottom: 1px solid #ebebeb;
+}
+.carac-logo{
+    width: 50vw;
+}
+
 
 .compra-centrado{
     margin:auto;
@@ -60,11 +81,19 @@ ul {
     border-radius: 50%;
     position: absolute;
     right: 20px;
-    top: -15px;
+    top: -35px;
 }
 
 .div-footer{
     text-align: center;
+}
+
+.formulario{
+    width: 500px;
+    margin:auto;
+    padding: 10px;
+    background-color:#ebebeb;
+    position: relative;
 }
 .icon-footer{
     font-size: 2em;
@@ -78,7 +107,6 @@ ul {
     text-align: center;
     margin: auto;
     background-color: #1259c3;
-   
 }
 
 .menu-centrado{
@@ -87,6 +115,13 @@ ul {
     margin-top:10px;
     
 }
+
+.entrada-formulario{
+    box-sizing: border-box;
+    width: 90%;
+}
+
+
 
 .product-shadow{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -126,6 +161,8 @@ ul {
     display: none;
 }
 
+
+
 @media(min-width:481px){
     /*tablet*/
     .site-navbar{
@@ -133,6 +170,67 @@ ul {
     }
     .menu-principal{
         display: none;
+    }
+    .seccion-productos{
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+       }
+    
+       .articulos-caracteristica{
+        width: 40vw;
+        background-color: white;
+        margin-bottom: 10px;
+        border: solid 1px #ebebeb;
+        box-sizing: border-box;
+    }
+    .carac-header{
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+       }
+     
+       .carac-logo{
+        width: 20vw;
+       }
+       .barra-busqueda{
+        width: 20vw;
+       }
+       .compras-cuotas{
+        width: 20vw;
+       }
+    
+    .flex-navbar{
+     display: flex;
+    }
+
+    .nav-listone{
+     display: flex;
+     list-style: none;
+     }
+
+    .nav-listtwo{
+         display: flex;
+         list-style: none;
+         justify-content: end;
+     }
+
+     .nav-listone li{
+         padding-left: 2%;
+         padding-right: 2%;
+     }
+
+     .nav-listtwo li{
+         padding-left: 2%;
+         padding-right: 2%;
+     }
+    
+    .cont-listone{
+     width: 50vw;
+    }
+    .cont-listtwo{
+     width: 50vw;
     }
   
 }
@@ -145,12 +243,83 @@ ul {
     .description {
      display:none;
     }
+
+    .detalles-articulos:hover .description{
+        display: block;
+        
+    }
+    .articulos-caracteristica:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
     .site-navbar{
         display: contents;
     }
     .menu-principal{
         display: none;
     }
+    .seccion-productos{
+        display:flex;
+        justify-content: space-between;
+       }
+    
+       .articulos-caracteristica{
+        width: 20vw;
+        background-color: white;
+        margin-bottom: 10px;
+        border: solid 1px #ebebeb;
+        box-sizing: border-box;
+    }
+    .carac-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+     
+       .carac-logo{
+        width: 20vw;
+        margin: 50px;
+       }
+       .formulario-adptativo-busqueda{
+        width: 20vw;
+        margin: 50px;
+        
+       }
+       .compras-cuotas{
+        width: 20vw;
+        margin: 50px;
+       
+       }
+       .flex-navbar{
+        display: flex;
+       }
+
+       .nav-listone{
+        display: flex;
+        list-style: none;
+        }
+
+       .nav-listtwo{
+            display: flex;
+            list-style: none;
+            justify-content: end;
+        }
+
+        .nav-listone li{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .nav-listtwo li{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+       
+       .cont-listone{
+        width: 50vw;
+       }
+       .cont-listtwo{
+        width: 50vw;
+       }
 }
 @media(min-width:1281px){
    /*escritorio*/
@@ -160,4 +329,70 @@ ul {
    .menu-principal{
     display: none;
    }
+   .seccion-productos{
+    display:flex;
+    justify-content: center;
+   }
+
+   .articulos-caracteristica{
+    width: 20vw;
+    background-color: white;
+    margin-bottom: 10px;
+    border: solid 1px #ebebeb;
+    box-sizing: border-box;
+}
+.carac-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+ 
+   .carac-logo{
+    width: 20vw;
+    margin: 50px;
+   }
+   .formulario-adptativo-busqueda{
+    width: 20vw;
+    margin: 50px;
+    
+   }
+   .compras-cuotas{
+    width: 20vw;
+    margin: 50px;
+   
+   }
+
+ .flex-navbar{
+ display: flex;
+}
+
+.nav-listone{
+ display: flex;
+ list-style: none;
+ }
+
+.nav-listtwo{
+     display: flex;
+     list-style: none;
+     justify-content: end;
+ }
+
+ .nav-listone li{
+     padding-left: 30px;
+     padding-right: 30px;
+ }
+
+ .nav-listtwo li{
+     padding-left: 30px;
+     padding-right: 30px;
+ }
+
+.cont-listone{
+ width: 50vw;
+}
+.cont-listtwo{
+ width: 50vw;
+}
+   
+  
 }
