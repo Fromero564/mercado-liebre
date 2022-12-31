@@ -206,11 +206,15 @@ ul {
     border: none;
     background-color:#1259c3 ;
 }
+.botones-login:hover p input{
+    background-color: #0022AA;
+}
 .centrado-login{
     text-align: center;
     margin-top:50px;
     margin-bottom: 50px;
 }
+
 .formulario-login{
     width: 90vw;
     margin:auto;
@@ -271,7 +275,7 @@ ul {
        }
        .detalles-articulos:hover i{
         transition: all 1s;
-        transform: rotate(90deg);
+        transform: rotate(-90deg);
 
     }
     
@@ -325,7 +329,7 @@ ul {
 
     .detalles-articulos:hover i{
         transition: all 1s;
-        transform: rotate(90deg);
+        transform: rotate(-90deg);
 
     }
     .articulos-caracteristica:hover{
@@ -451,7 +455,7 @@ ul {
    }
    .detalles-articulos:hover i{
     transition: all 1s;
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
 
 }
 
