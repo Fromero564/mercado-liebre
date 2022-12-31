@@ -174,7 +174,7 @@ ul {
 }
 
 .formulario{
-    width: 500px;
+    width: 90vw;
     margin: auto;
     padding: 20px;
     background-color:#ebebeb;
@@ -192,6 +192,39 @@ ul {
 
 .input-relleno{
     width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    border:5px solid white;
+}
+
+/*formulario login*/
+
+.botones-login p input{
+    width: 60%;
+    height: 30px;
+    color:white;
+    border: none;
+    background-color:#1259c3 ;
+}
+.centrado-login{
+    text-align: center;
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+.formulario-login{
+    width: 90vw;
+    margin:auto;
+    background-color:#ebebeb;
+    position: relative;
+}
+
+.formulario-login p{
+    padding: 10px;
+    margin: auto;
+}
+
+.input-relleno-login{
+    width: 60%;
     height: 30px;
     border-radius: 5px;
     border:5px solid white;
@@ -245,7 +278,7 @@ ul {
     .flex-navbar{
      display: flex;
     }
-
+  
     .nav-listone{
      display: flex;
      list-style: none;
@@ -340,6 +373,10 @@ ul {
         display: flex;
        }
 
+       .formulario{
+        width: 500px;
+       }
+
        .nav-listone{
         display: flex;
         list-style: none;
@@ -403,6 +440,10 @@ ul {
     margin: 50px;
     
    }
+   .formulario{
+    width: 500px;
+   }
+
    .compras-cuotas{
     width: 20vw;
     margin: 50px;
