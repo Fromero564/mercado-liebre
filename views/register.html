@@ -14,31 +14,36 @@
 <body>
     <header class="bg-yellow">
         <div class="carac-header">
-        <div class="carac-logo">
-         <img src="/images/logo-mercado-liebre.svg">   
+         <div class="carac-logo">
+          <img src="/images/logo-mercado-liebre.svg">   
+           </div>
+           <div class="formulario-adptativo-busqueda">
+              <form class="formulario-busqueda">
+               <input type="text" placeholder="Buscar productos,marcas" class="barra-busqueda">
+               <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>
+            </div>
+             <div class="compras-cuotas"><i class="fa-solid fa-hand-holding-dollar compra-centrado"></i>Comprá en cuotas y sin tarjeta de crédito</div>
         </div>
-        <div>
-       <form class="formulario-busqueda">
-       <input type="text" placeholder="Buscar productos,marcas" class="barra-busqueda">
-       <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-       </form>
-        </div>
-        <div><i class="fa-solid fa-hand-holding-dollar compra-centrado"></i>Comprá en cuotas y sin tarjeta de crédito</div>
-       </div>
         <div>
             <div class="site-navbar">
-            <ul>
-             <li>Ofertas</li>   
-             <li>Tiendas Oficiales</li>   
-             <li>Vender</li>   
-             <li>Ayuda</li>   
-            </ul>
-             
-            <ul>
-             <li><a href="/register">Creá tu cuenta</a><i class="fa-regular fa-address-card"></i></li>   
-             <li>Ingresá <i class="fa-solid fa-right-to-bracket"></i></li>   
-             <li>Mis compras<i class="fa-solid fa-basket-shopping"></i></li>   
-            </ul>
+              <div class="flex-navbar">
+                  <div class="cont-listone">
+                     <ul class="nav-listone">
+                     <li>Ofertas</li>   
+                     <li>Tiendas Oficiales</li>   
+                     <li>Vender</li>   
+                     <li>Ayuda</li>   
+                     </ul>
+                  </div>
+                  <div class="cont-listtwo">
+                     <ul class="nav-listtwo">
+                         <li><a href="/register">Creá tu cuenta</a><i class="fa-regular fa-address-card"></i></li>   
+                        <li>Ingresá <i class="fa-solid fa-right-to-bracket"></i></li>   
+                        <li>Mis compras<i class="fa-solid fa-basket-shopping"></i></li>   
+                      </ul>
+                  </div>
+              </div>
             </div>
             <div class="menu-principal">
                 <i class="fas fa-bars menu-centrado"></i>
@@ -50,31 +55,31 @@
         </header>
    <main class="propiedades-main">
     <div class="formulario">
-    <form action="" method="">
-        <p ><input type="text" name="nya" placeholder="Nombre y apellido" class="entrada-formulario"></p>
-        <p> <input type="text" name="usuario" placeholder="Nombre de usuario"></p>
-        <p><label for="nacimiento">Fecha de nacimiento:</label></P>
-        <P><input type="date" name="nacimiento" ></p>
-        <p><label for="domicilio">Domicilio:</label>
-        <input type="text" name="domicilio"></p>
+    <form action="/home" method="">
+        <p ><input type="text" name="nya" placeholder="Nombre y apellido"class="input-relleno"></p>
+        <p> <input type="text" name="usuario" placeholder="Nombre de usuario" class="input-relleno"></p>
+        <p><label for="nacimiento">Fecha de nacimiento:</label>
+        <input type="date" name="nacimiento"></p>
+        <p><input type="text" name="domicilio" placeholder="Domicilio" class="input-relleno"></p>
         <p><label for="tvendedor"> Tipo de usuario:</label>
         <input type="radio" name="tvendedor" value="vendedor" id="vendor"><label>Vendedor</label>
         <input type="radio" name="tvendedor" value="comprador" id="comprador"><label>Comprador</label></p>
-        <p><label for="cdinteres">Categoria de interés(Puede ser mas de una opcion):</label>
-        <input type="checkbox" name="cdinteres" value="electro" id="electro"><label>Electro</label>
-        <input type="checkbox" name="cdinteres" value="moda" id="moda"><label>Moda</label>
-        <input type="checkbox" name="cdinteres" value="hogar" id="hogar"><label>Hogar</label>
-        <input type="checkbox" name="cdinteres" value="jugueteria" id="jugueteria"><label>jugueteria</label>
-        <input type="checkbox" name="cdinteres" value="vidasana" id="vidasana"><label>Vida Sana</label></p>
+        <p><label for="cdinteres">Categoria de interés(Puede ser mas de una opcion):</label></p>
+        <div class="checkbox">
+        <p><input type="checkbox" name="cdinteres" value="electro" id="electro"><label>Electro</label></p>
+        <p><input type="checkbox" name="cdinteres" value="moda" id="moda"><label>Moda</label></p>
+        <p><input type="checkbox" name="cdinteres" value="hogar" id="hogar"><label>Hogar</label></p>
+        <p><input type="checkbox" name="cdinteres" value="jugueteria" id="jugueteria"><label>jugueteria</label></p>
+        <p><input type="checkbox" name="cdinteres" value="vidasana" id="vidasana"><label>Vida Sana</label></p>
+        </div>
         <p><label for="fotou"> Foto del Usuario:</label>
         <input type="file" name="fotou"></p>
-        <p><label for="password"> Contraseña:</label>
-        <input type="password" name="contra">
-        <p><label for="rpassword">Repetir Contraseña</label>
-        <input type="password" name="rpassword"></p>
-        <input type="submit" value="Enviar y volver a Inicio"></p>
-        <input type="reset" name="reset" value="Reset"></p>
-        
+        <p><input type="password" name="contra" placeholder="Contraseña" class="input-relleno">
+        <p><input type="password" name="rpassword" placeholder="Repetir Contraseña" class="input-relleno"></p>
+        <div class="botones">
+          <p><input type="submit" value="Enviar y volver a Inicio"></p>
+          <p><input type="reset" name="reset" value="Borrar datos"></p>
+        </div>
     </form>
 
     </div>
