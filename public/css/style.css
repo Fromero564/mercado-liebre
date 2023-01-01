@@ -278,6 +278,16 @@ ul {
         transform: rotate(-90deg);
 
     }
+
+    .footer-mercado{
+        display: flex;
+        align-items: center;
+        height: 150px;
+    }
+
+    .div-footer:hover i{
+        color: #EAC926;
+    }
     
     .flex-navbar{
      display: flex;
@@ -332,6 +342,15 @@ ul {
         transform: rotate(-90deg);
 
     }
+    .footer-mercado{
+        display: flex;
+        align-items: center;
+        height: 150px;
+    }
+    .div-footer:hover i{
+        color: #EAC926;
+    }
+    
     .articulos-caracteristica:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
@@ -458,6 +477,15 @@ ul {
     transform: rotate(-90deg);
 
 }
+.footer-mercado{
+    display: flex;
+    align-items: center;
+    height: 150px;
+}
+.div-footer:hover i{
+    color: #EAC926;
+}
+
 
  .flex-navbar{
  display: flex;
