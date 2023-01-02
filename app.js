@@ -3,10 +3,13 @@ const express = require("express");
 const app = express();
 
 app.use(express.static(path.join(__dirname,"public")));
-app.listen(3000, ()=>{
- console.log("Se prendió");
-});
 
+const PORT= process.env.PORT || 3001;
+
+
+app.listen(PORT, ()=>{
+ console.log(`Se prendió en el puerto ${PORT}`);
+});
 
 app.get("/",(req,res)=>{
     res.sendFile(path.resolve(__dirname,"views/home.html"))
