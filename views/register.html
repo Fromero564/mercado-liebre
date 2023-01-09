@@ -56,11 +56,11 @@
    <main class="propiedades-main">
     <div class="formulario">
     <form action="/home" method="">
-        <p ><input type="text" name="nya" placeholder="Nombre y apellido"class="input-relleno"></p>
-        <p> <input type="text" name="usuario" placeholder="Nombre de usuario" class="input-relleno"></p>
+        <p ><input type="text" name="nya" placeholder="Nombre y apellido"class="input-relleno" required></p>
+        <p> <input type="text" name="usuario" placeholder="Nombre de usuario" class="input-relleno" required></p>
         <p><label for="nacimiento">Fecha de nacimiento:</label>
-        <input type="date" name="nacimiento"></p>
-        <p><input type="text" name="domicilio" placeholder="Domicilio" class="input-relleno"></p>
+        <input type="date" name="nacimiento" required></p>
+        <p><input type="text" name="domicilio" placeholder="Domicilio" class="input-relleno" required></p>
         <p><label for="tvendedor"> Tipo de usuario:</label>
         <input type="radio" name="tvendedor" value="vendedor" id="vendor"><label>Vendedor</label>
         <input type="radio" name="tvendedor" value="comprador" id="comprador"><label>Comprador</label></p>
@@ -73,9 +73,9 @@
         <p><input type="checkbox" name="cdinteres" value="vidasana" id="vidasana"><label>Vida Sana</label></p>
         </div>
         <p><label for="fotou"> Foto del Usuario:</label>
-        <input type="file" name="fotou"></p>
-        <p><input type="password" name="contra" placeholder="Contraseña" class="input-relleno">
-        <p><input type="password" name="rpassword" placeholder="Repetir Contraseña" class="input-relleno"></p>
+        <input type="file" name="fotou" required></p>
+        <p><input type="password" name="contra" placeholder="Contraseña" class="input-relleno" required>
+        <p><input type="password" name="rpassword" placeholder="Repetir Contraseña" class="input-relleno" required></p>
         <div class="botones">
           <p><input type="submit" value="Enviar y volver a Inicio"></p>
           <p><input type="reset" name="reset" value="Borrar datos"></p>
